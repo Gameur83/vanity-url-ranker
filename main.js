@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
+const config = require('dotenv')
 
 const client = new Client({
     intents: [
@@ -8,7 +9,7 @@ const client = new Client({
     ],
 });
 
-const TOKEN = 'MTMwNzcwODcwOTk1MDE5MzY4NA.GV_ohi.igyAv3eimAPAjkDeLwsiqYa8omB1htGCEW0bto';
+const TOKEN = process.env.t;
 const VANITY_PATTERNS = [
     'discord.gg/breakthecode',
     '.gg/breakthecode'
